@@ -1,0 +1,91 @@
+/* <div className="contact-header">
+<div className="background-shade">
+  <div className="contact-first-section">
+      <div className="contact-page-title">
+          <h1>Contact Us</h1>
+      </div>
+  </div>
+  <div className="contact-second-section">
+      <h1 className="contact-header-title">
+            Money never sleeps, neither do we
+      </h1>
+      <p className="contact-text-body">
+              As serving clients from all around the globe and partnering 
+              with financial institutions in different times zones and
+              being the intermediary between them our working hours never stops. 
+              So you are welcome to contact us via livechat on this website, email,
+               telephone, Telegram, Signal or Skype. We will do our best to respond 
+               as quick as possible.
+      </p>
+  </div>
+</div>
+</div> */
+.contact-header{
+    background:red;
+
+}
+
+.background-shade{
+    display:flex;
+    padding: 2rem 5%;
+    min-height:55vh ;
+    /* justify-content:center; */
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#F4F1ED;
+    gap:3rem;
+
+}
+.contact-first-section{
+    flex:0.3;
+}
+.contact-page-title h1{
+    font-size:5rem;
+    color: hsl(316, 49%, 19%);
+
+}
+.contact-second-section{
+    flex:0.7;
+}
+.contact-second-section .contact-header-title{
+    font-size:2.5rem;
+    line-height:7rem;
+    color: hsl(316, 49%, 19%);
+
+}
+.contact-second-section .contact-text-body{
+    font-size:1rem;
+    line-height:2rem;
+    color: hsl(316, 49%, 19%);
+
+}
+
+
+@media screen and (max-width: 1100px) {
+ 
+}
+ 
+@media screen and (max-width: 1025px) {
+    .contact-second-section .contact-header-title{
+        font-size:2.5rem;
+        line-height:6rem;
+        text-align: center;
+        color: hsl(316, 49%, 19%);
+    
+    }
+    .background-shade{
+        flex-direction: column;
+    }
+    .contact-first-section{
+        margin: 1rem 0;
+        flex: 1;
+        width: 100%;
+
+
+    }
+    .contact-second-section {
+        flex: 1;
+        width: 100%;
+
+    }
+}

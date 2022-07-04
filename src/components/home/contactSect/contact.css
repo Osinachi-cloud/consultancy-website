@@ -1,0 +1,44 @@
+
+.contact-button{
+    /* background-color: red; */
+    border:2px solid hsl(316, 49%, 19%);
+    padding:20px 0px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: hsl(316, 49%, 19%);
+    text-align: center;
+
+}
+.contact-wrapper{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top:5%;
+    width:40%;
+    /* max-width:80%; */
+
+
+}
+.contact-wrapper p{
+    max-width: 100%;
+    line-height:35px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: hsl(316, 49%, 19%);
+
+}
+.contact-section{
+    margin-top: 100px;
+    height:60vh;
+}
+
+@media screen and (max-width: 960px) {
+    .contact-wrapper{
+        min-width:70%;
+        /* max-width:80%;   */
+    }
+}

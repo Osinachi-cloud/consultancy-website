@@ -1,0 +1,58 @@
+.hero{
+    /* height: 70vh; */
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#F4F1ED;
+    padding:2%;
+}
+.call-to-action{
+    padding:1% 5%;
+}
+.image{
+    min-width:40%;
+  
+}
+.call-to-action .title, .call-to-action .text-body{
+    font-family: 'Playfair Display', serif;
+    color:hsl(316, 49%, 19%);
+    font-size: 3.5rem;
+}
+.call-to-action .text-body{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+}
+.button{
+    color: white;
+    background-color:hsl(316, 49%, 19%);
+    font-family: 'Playfair Display', serif;
+    padding:20px 100px;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top:50px;
+}
+@media screen and (max-width: 1100px) {
+    .image {
+        /* flex:100%; */
+    }
+}
+ 
+@media screen and (max-width: 930px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    .call-to-action .title, .call-to-action .text-body{
+        text-align: center;
+    }
+    .button{
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .call-to-action{
+        padding:7%;
+    }
+}

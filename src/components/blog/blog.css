@@ -1,0 +1,244 @@
+.caroussel {
+    position: relative;
+    width: 100%;
+  }
+  .caroussel-content {
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px;
+  
+  }
+  .caroussel-content .row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    transition: transform 0.5s linear;
+    width: 100%;
+  }
+  .caroussel-content [class*="col-"] {
+    flex: 0 0 auto;
+    height: 100%;
+    display:flex;
+    justify-content:center;
+  
+  }
+  .card-box:hover{
+      background:#F4F1ED;
+      border-radius: 0;
+  }
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 50%;
+  }
+  .col-3 {
+    width: 33.33%;
+  }
+  .col-4 {
+    width: 25%;
+  }
+  .col-5 {
+    width: 20%;
+  }
+  .col-6 {
+    width: 16.66%;
+  }
+  .caroussel > button {
+    display: none;
+  }
+  .caroussel:hover > button {
+    display: block;
+  }
+  .btn-next,
+  .btn-prev {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .btn-next {
+    right: -30px;
+  }
+  .btn-prev {
+    left: -30px;
+  }
+  .caroussel-dots {
+    align-items: center;
+    bottom: -10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+  }
+  .caroussel-dots > * {
+    background-color: #000;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 4px;
+    margin: 0 10px;
+    width: 12px;
+    height:12px;
+    border-radius:12px;
+  }
+  .btn-next:hover,
+  .btn-prev:hover,
+  .caroussel-dots > :hover {
+    opacity: 1;
+  }
+  
+  
+  
+  .slider {
+    width: 90%;
+    margin: auto;
+    padding:50px 0;
+  }
+  .slider-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    padding: 10px 150px;
+  }
+  
+  p {
+    font-size: 14px;
+    text-align: justify;
+  }
+  
+  [class*="col-"] {
+    padding: 10px;
+  }
+  
+  .card {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    padding: 7%;
+  }
+  .card h1{
+      font-family: 'Playfair Display', serif;
+      color:hsl(316, 49%, 19%);
+      font-size: 2.2rem;
+      line-height:3rem;
+      margin: 1rem 0;
+      /* margin: auto;
+      width: 90%; */
+  }
+  .card p{
+      font-family: 'Playfair Display', serif;
+      color:hsl(316, 49%, 19%);
+      font-size: 1rem;
+  }
+  .card img{
+      /* width: 90%;
+      margin: auto; */
+  }
+  .blogLink{
+      font-family: 'Playfair Display', serif;
+      color:hsl(316, 49%, 19%);
+      font-size: 1.5rem;
+      line-height:3rem;
+      visibility: hidden;
+  
+  }
+  .card:hover > .blogLink {
+      visibility: visible;
+  
+  }
+  .blog-title{
+      font-family: 'Playfair Display', serif;
+      color:hsl(316, 49%, 19%);
+      font-size: 3.5rem;
+      font-weight:200;
+      line-height:3rem;
+      margin: 50px 0;
+  }
+    
+  .mt-5 {
+    margin-top: 50px;
+  }
+  .mb-10 {
+    margin-bottom: 100px;
+  }
+
+
+.search-box{
+    padding:5%;
+}
+
+  .search-box-bg-image .search-box{
+    height:50vh;
+    width: 100%;
+    background:#F4F1ED;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .search-box-first-section{
+    flex: 30%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+  }
+  .search-box-first-section h1{
+    font-size:5rem;
+    color: hsl(316, 49%, 19%);
+  }
+
+.search-box-second-section{
+    flex:70%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.search-box-second-section .search-input-box {
+    background-color:white;
+    padding:0.5rem 1rem;
+    width:70%;
+    display: flex;
+    justify-content:space-between;
+}
+  
+.search-box-second-section .search-input-box input{
+    background-color:transparent;
+    outline-width: 0;
+}
+  
+  @media screen and (max-width: 800px) {
+    .container {
+      padding: 10px;
+    }
+    .slider-wrapper {
+    }
+    .card {
+    }
+    .caroussel-content [class*="col-"] {
+      flex: 0 0 auto;
+      height: 100%;
+      width:100%;
+    }
+    .search-box-first-section{
+        flex: 100%;
+        justify-content:left;
+    }
+    .search-box-second-section{
+        flex: 100%;
+    }
+    .search-box-second-section .search-input-box {
+        width:100%;
+    }
+  }
+  

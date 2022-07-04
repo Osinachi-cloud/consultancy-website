@@ -1,0 +1,126 @@
+.contact-form{
+    display:flex;
+    gap:3rem;
+    padding:5% 5%;
+    flex-wrap: wrap;
+}
+.contact-form-first-section{
+    flex:0.3;
+}
+.contact-form-first-section .contact-link{
+    display: flex;
+    gap:1rem;
+    padding:1rem;
+    margin:1.5rem 0;
+}
+.contact-form-first-section .contact-link p{
+    color: hsl(316, 49%, 19%);
+    font-size: 1.2rem;
+}
+
+.contact-form-second-section{
+    flex:0.7;
+
+}
+
+.contact-form-second-section{
+
+}
+.contact-form-input-wrapper input{
+    background:transparent;
+    padding:1rem;
+    outline-width: 0;
+    width:100%;
+}
+.contact-form-input-wrapper{
+    background:#F4F1ED;
+    padding:1rem;
+    margin:2rem 0;
+}
+.form-wrapper{
+    width: 75%;
+
+}
+input::placeholder {
+    color: hsl(316, 49%, 19%);
+    font-size: 1.1rem;
+}
+textarea::placeholder {
+    color: hsl(316, 49%, 19%);
+    font-size: 1.1rem;
+}
+.contact-form-text-area{
+    background-color:transparent;
+}
+.contact-form-text-area{
+    padding-top: 1rem;
+}
+.contact-form .contact-form-first-section h1,
+.contact-form .contact-form-second-section h1{
+    color: hsl(316, 49%, 19%);
+    font-size: 2.5rem;
+}
+.checkbox-input input{
+    width:1.2rem;
+    height:1.2rem;
+    border :1px solid hsl(316, 49%, 19%);
+
+}
+.checkbox-input p{
+    color: hsl(316, 49%, 19%);
+    font-size: 1rem;
+}
+.checkbox-group{
+    margin:2.5rem 0;
+}
+.checkbox-group h4{
+    font-size: 1.2rem;
+    color: hsl(316, 49%, 19%);
+}
+.checkbox-group .checkbox-input{
+    padding:0rem 3rem;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.contact-form-second-section .checkbox-input{
+    display: flex;
+    gap: 1rem;
+}
+.contact-form-second-section .form-wrapper>p{
+    color:hsl(316, 49%, 19%);
+    font-size:0.8rem;
+    margin: 1rem 0;
+}
+.form-wrapper .contact-button{
+    width: 100%;
+    margin:2rem 0;
+    color:white;
+    border:none;
+    background-color:hsl(316, 49%, 19%);
+    
+}
+
+
+@media screen and (max-width: 1025px) {
+    .contact-form .contact-form-second-section h1{
+        text-align: center;
+    }
+    .contact-form .contact-form-first-section,
+    .contact-form .contact-form-second-section{
+    width: 100%;
+}
+.form-wrapper{
+    width: 100%;
+}
+.contact-form .contact-form-first-section,
+.contact-form .contact-form-second-section{
+flex: 100%;
+}
+.contact-form-input-wrapper{
+    width: 100%;
+}
+
+
+    
+}

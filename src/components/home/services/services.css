@@ -1,0 +1,80 @@
+.services{
+    margin-top: 50px;
+    
+}
+.services-title{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color:hsl(316, 49%, 19%);
+    letter-spacing: 1.5px;
+    padding:50x 0;
+    margin-top:40px;
+}
+.services-box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-box{
+    width: 50%;
+    height:75vh;
+    border:1px solid white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.service-box .title{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: left;
+    color:hsl(316, 49%, 19%);
+    letter-spacing: 1.5px;
+    /* padding:50x 0; */
+    width:250px;
+    margin-top:40px;
+}
+.service-box .text-body{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    text-align: left;
+    color:hsl(316, 49%, 19%);
+    letter-spacing: 1px;
+    width:300px;
+    line-height: 35px;
+    margin-top:40px;
+}
+.services-box-container .service-box li{
+    /* background-image: url('https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-picture-icon-png-image_695350.jpg'); */
+    background-repeat: no-repeat;
+    /* background-image: url('https://mdn.mozillademos.org/files/12676/star.svg'); */
+    /* mask-image: image(url('https://mdn.mozillademos.org/files/12676/star.svg'), lightgrey); */
+}
+.service-box:hover{
+    background-color:hsl(316, 49%, 19%);
+}
+.service-box:hover .text-body,.service-box:hover .title{
+    color:white;
+}
+.link{
+    /* width:100%;
+    height:100%; */
+}
+.cross-background{
+    background:#F4F1ED;
+
+}
+@media screen and (max-width: 930px) {
+    .services-box-container{
+        flex-direction: column;
+    }
+    .service-box{
+        width:100%;
+    }
+    .service-box{
+        display:flex;
+        justify-content: center;
+
+    }
+}
